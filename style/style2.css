@@ -10,11 +10,6 @@ a {
   color: white;
 }
 
-a:hover {
-  color: aqua;
-  text-transform: uppercase;
-}
-
 body {
   background-image: url(/public/Background-color-ataslan);
   background-size: cover;
@@ -93,16 +88,22 @@ main {
   background-color: aqua;
   color: blueviolet;
   align-self: flex-start;
+  border-radius: 10px;
 }
 
 .portfolio-item a:hover {
-  background-color: #ffa500;
+  background-color: yellow;
+  color: blueviolet;
+  transform: scale(1.03);
 }
 
 footer {
   color: white;
   text-align: center;
-  padding: 10px;
-  margin: 10px;
   text-decoration: none;
+}
+
+footer a:hover {
+  color: aqua;
+  text-transform: uppercase;
 }
