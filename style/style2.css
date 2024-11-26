@@ -1,85 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Georgia, serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: aqua;
+  text-transform: uppercase;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 1;
-    padding: 1;
-    background-color: #f4f4f4;
-    border-radius: 10px;
+  background-image: url(/public/Background-color-ataslan);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    margin: 1;
-    padding: 1;
-    text-align: center;
-    border-radius: 10px;
+  background-color: aqua;
+  color: blueviolet;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 15px;
 }
 
 main {
-    padding: 10px;
+  padding: 5px 30px 15px;
 }
 
 .portfolio {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .portfolio-item {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    width: 30%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s;
-    padding: 10px;
-
+  color: white;
+  border: 2px solid aqua;
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  transition: transform 0.3s;
+  text-align: justify;
 }
 
 .portfolio-item:hover {
-    transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .portfolio-item img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-    border-radius: 10px;
+  width: 40%;
+  height: 60%;
+  border-bottom: 2px solid aqua;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 5px;
 }
 
-.portfolio-item h2 {
-    margin-top: 5px;
-    padding: 10px;
-    background-color: #444;
-    color: white;
-    border-radius: 10px;
+.portfolio-text {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: first baseline;
+}
+
+.portfolio-item h3 {
+  margin: 10px;
+  padding: 10px;
+  background-color: aqua;
+  color: blueviolet;
+  border-radius: 15px;
 }
 
 .portfolio-item p {
-    padding: 10px;
-    border-radius: 10px;
+  padding: 0 10px 10px;
 }
 
 .portfolio-item a {
-    display: block;
-    padding: 10px;
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-    background-color: #ffcc00;
-    border-top: 1px solid #ddd;
-    border-radius: 10px;
+  display: block;
+  padding: 5px;
+  margin-left: 10px;
+  text-decoration: none;
+  background-color: aqua;
+  color: blueviolet;
+  align-self: flex-start;
 }
 
 .portfolio-item a:hover {
-    background-color: #ffa500;
+  background-color: #ffa500;
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    margin: 2;
-    padding: 2;
-    text-align: center;
-    border-radius: 5px;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
 }
